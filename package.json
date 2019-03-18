@@ -1,15 +1,19 @@
 {
-  "name": "project_1",
-  "version": "1.0.0",
+  "name": "brain_games_arbyman",
+  "version": "1.0.1",
   "description": "hexlet-project-1",
   "main": "",
   "bin": {
-    "brain-games.js": "./brain-games.js"
+    "brain-games": "dist/bin/brain-games.js"
 },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
   },
-  "author": "",
+  "files": [
+    "dist"
+  ],
+  "author": "arbyman",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.2.3",
