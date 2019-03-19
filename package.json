@@ -1,10 +1,11 @@
 {
   "name": "brain_games_arbyman",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "hexlet-project-1",
   "main": "",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
