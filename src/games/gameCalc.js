@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import engine from '../engine';
-import getRandomNumber from '../utils';
+import { getRandomNumber } from '../utils';
 
 export default () => {
   const description = 'What is the result of the expression?\n';
