@@ -1,8 +1,17 @@
 #!/usr/bin/env node
-import engine from './engine';
+import engine from '../engine';
+import getRandomNumber from '../utils';
 
 export default () => {
-  const generateRandomNumber = () => Math.round(Math.random() * 99 + 1);
-  const getCorrectAnswer = n => (n % 2 === 0 ? 'yes' : 'no');
-  engine(generateRandomNumber, getCorrectAnswer);
+  const checkParity = n => n % 2 === 0;
+  const getCorrectAnswer = n => (checkParity(n) ? 'yes' : 'no');
+  const description = 'Answer "yes" if number even otherwise answer "no".\n';
+
+  const generateDataGameEven = () => {
+    const num = getRandomNumber(1, 100);
+    const correct = getCorrectAnswer(num);
+    return [num, correct];
+  };
+
+  engine(generateDataGameEven, description);
 };

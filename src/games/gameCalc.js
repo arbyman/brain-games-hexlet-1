@@ -1,27 +1,30 @@
 #!/usr/bin/env node
-import engine from './engine';
+import engine from '../engine';
+import getRandomNumber from '../utils';
 
 export default () => {
-  const getOperation = () => {
-    const operations = ['+', '-', '*'];
-    return operations[Math.round(Math.random() * 2)];
-  };
-  const generateExpression = () => {
-    const a = Math.round(Math.random() * 99 + 1);
-    const b = Math.round(Math.random() * 99 + 1);
-    const oper = getOperation();
-    return `${a} ${oper} ${b}`;
-  };
-  const getCorrectAnswer = (expression) => {
-    const [a, oper, b] = expression.split(' ');
+  const description = 'What is the result of the expression?\n';
+  const operations = ['+', '-', '*'];
+
+  const getOperator = () => operations[getRandomNumber(0, 2)];
+  const getOperation = (oper) => {
     switch (oper) {
       case '-':
-        return `${Number(a) - Number(b)}`;
+        return (m, n) => `${Number(m) - Number(n)}`;
       case '*':
-        return `${Number(a) * Number(b)}`;
+        return (m, n) => `${Number(m) * Number(n)}`;
       default:
-        return `${Number(a) + Number(b)}`;
+        return (m, n) => `${Number(m) + Number(n)}`;
     }
   };
-  engine(generateExpression, getCorrectAnswer);
+  const generateDataGameCalc = () => {
+    const a = getRandomNumber(1, 100);
+    const b = getRandomNumber(1, 100);
+    const oper = getOperator();
+    const operation = getOperation(oper);
+    const question = `${a} ${oper} ${b}`;
+    const correctAnswer = operation(a, b);
+    return [question, correctAnswer];
+  };
+  engine(generateDataGameCalc, description);
 };

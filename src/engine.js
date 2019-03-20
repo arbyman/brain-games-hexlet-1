@@ -1,23 +1,24 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import interviewer from '../index';
+import interviewer from './index';
 
-export default (expression, checkAnswer) => {
+export default (expression, description) => {
+  console.log('Welcome to the Brain Games!');
+  console.log(description);
   const userName = interviewer();
-  for (let i = 1; i <= 3; i += 1) {
-    const question = expression();
-    const correctAnswer = checkAnswer(question);
+  console.log(`Hello, ${userName}!\n`);
+  const steps = 3;
+  for (let i = 1; i <= steps; i += 1) {
+    const [question, correctAnswer] = expression();
     console.log(`Question: ${question}`);
     const answerUser = readlineSync.question('Your answer: ');
     if (correctAnswer === answerUser) {
       console.log('Correct!');
-      if (i === 3) {
-        console.log(`Congratulations, ${userName}!`);
-      }
     } else {
       console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${correctAnswer}')`);
       console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
+  console.log(`Congratulations, ${userName}!`);
 };
