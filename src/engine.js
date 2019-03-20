@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import interviewer from './index';
 
 export default (expression, description) => {
   console.log('Welcome to the Brain Games!');
   console.log(description);
-  const userName = interviewer();
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
   const steps = 3;
   for (let i = 1; i <= steps; i += 1) {
