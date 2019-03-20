@@ -7,10 +7,9 @@ const createProgression = (start, step, length) => {
   }
   return [start, ...createProgression(start + step, step, length - 1)];
 };
+const description = 'What number is missing in the progression?\n';
 
 export default () => {
-  const description = 'What number is missing in the progression?\n';
-
   const generateDataGameProgression = () => {
     const start = getRandomNumber(1, 100);
     const step = getRandomNumber(2, 7);

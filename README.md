@@ -8,3 +8,5 @@
 [![asciicast](https://asciinema.org/a/NnJnxL3t7H81o0KpA0ZgmY2xo.svg)](https://asciinema.org/a/NnJnxL3t7H81o0KpA0ZgmY2xo)
 ### Install Brain Game Progression
 [![asciicast](https://asciinema.org/a/wdMeKKwWpbf2s8gwWjDLw5zFz.svg)](https://asciinema.org/a/wdMeKKwWpbf2s8gwWjDLw5zFz)
+### Install Brain Game Prime
+[![asciicast](https://asciinema.org/a/UNMhUohthDyjoJaet5PefommK.svg)](https://asciinema.org/a/UNMhUohthDyjoJaet5PefommK)
