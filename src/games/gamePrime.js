@@ -2,6 +2,7 @@ import engine from '../engine';
 import getRandomNumber from '../utils';
 
 const isPrime = (n, m = Math.floor(Math.sqrt(n))) => {
+  if (n < 2) return false;
   if (m === 1) {
     return true;
   }
@@ -12,7 +13,7 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 
 export default () => {
   const generateDataGamePrime = () => {
-    const num = getRandomNumber(1, 47);
+    const num = getRandomNumber(2, 47);
     const correct = getCorrectAnswer(num);
     return [num, correct];
   };
