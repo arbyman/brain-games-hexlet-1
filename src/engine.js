@@ -1,12 +1,11 @@
-#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
+const steps = 3;
 export default (expression, description) => {
   console.log('Welcome to the Brain Games!');
   console.log(description);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
-  const steps = 3;
   for (let i = 1; i <= steps; i += 1) {
     const [question, correctAnswer] = expression();
     console.log(`Question: ${question}`);

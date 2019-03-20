@@ -1,6 +1,5 @@
-#!/usr/bin/env node
 import engine from '../engine';
-import { getRandomNumber } from '../utils';
+import getRandomNumber from '../utils';
 
 export default () => {
   const checkParity = n => n % 2 === 0;

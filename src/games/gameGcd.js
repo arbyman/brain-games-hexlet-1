@@ -1,7 +1,7 @@
-#!/usr/bin/env node
 import engine from '../engine';
-import { greatestCommonDivisor as gcd, getRandomNumber } from '../utils';
+import getRandomNumber from '../utils';
 
+const gcd = (m, n) => (n === 0 ? m : gcd(n, m % n));
 export default () => {
   const description = 'Find the greatest common divisor of given numbers.\n';
   const generateDataGameGcd = () => {
