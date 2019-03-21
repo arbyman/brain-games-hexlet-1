@@ -3,7 +3,6 @@ const brainGames = [
   'brain-calc',
   'brain-gcd',
   'brain-progression',
-  'brain-calc',
   'brain-prime',
   'brain-sqrt',
   'brain-multiply',
