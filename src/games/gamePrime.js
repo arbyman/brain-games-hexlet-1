@@ -1,21 +1,21 @@
 import engine from '../engine';
 import getRandomNumber from '../utils';
 
-const isPrime = (n, m = Math.floor(Math.sqrt(n))) => {
-  if (n < 2) return false;
-  if (m === 1) {
-    return true;
+const isPrime = (num) => {
+  if (num < 2) return false;
+  if (num === 2) return true;
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) return false;
   }
-  return n % m === 0 ? false : isPrime(n, m - 1);
+  return true;
 };
-const getCorrectAnswer = n => (isPrime(n) ? 'yes' : 'no');
-const description = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export default () => {
   const generateDataGamePrime = () => {
-    const num = getRandomNumber(2, 47);
-    const correct = getCorrectAnswer(num);
-    return [num, correct];
+    const question = getRandomNumber(2, 47);
+    const correctAnswer = isPrime(question) ? 'yes' : 'no';
+    return [question, correctAnswer];
   };
 
   engine(generateDataGamePrime, description);

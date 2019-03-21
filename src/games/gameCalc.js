@@ -2,7 +2,7 @@ import engine from '../engine';
 import getRandomNumber from '../utils';
 
 export default () => {
-  const description = 'What is the result of the expression?\n';
+  const description = 'What is the result of the expression?';
   const operations = ['+', '-', '*'];
 
   const getOperator = () => operations[getRandomNumber(0, 2)];
