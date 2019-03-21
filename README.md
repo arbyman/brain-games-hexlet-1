@@ -8,8 +8,6 @@
 
 ## This project includes games:
 
-```$ brain-games```
-
 * [Even](#usage-brain-game-even)
 * [Calc](#usage-brain-game-calc)
 * [Gcd](#usage-brain-game-gcd)
@@ -19,7 +17,9 @@
 * [Multiply](#usage-brain-game-multiply)
 
 ### Usage Brain Games
+
 ```$ brain-games```
+
 [![asciicast](https://asciinema.org/a/lKusltPYeRyHUgIDJZeMIbDsX.svg)](https://asciinema.org/a/lKusltPYeRyHUgIDJZeMIbDsX)
 
 ## Usage Brain Game Even
