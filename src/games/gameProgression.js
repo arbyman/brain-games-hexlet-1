@@ -7,7 +7,7 @@ const createProgression = (start, step, length) => {
   }
   return [start, ...createProgression(start + step, step, length - 1)];
 };
-const description = 'What number is missing in the progression?\n';
+const description = 'What number is missing in the progression?';
 
 export default () => {
   const generateDataGameProgression = () => {
