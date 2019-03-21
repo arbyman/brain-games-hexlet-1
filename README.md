@@ -15,6 +15,8 @@
 * [Gcd](#usage-brain-game-gcd)
 * [Progression](#usage-brain-game-progression)
 * [Prime](#usage-brain-game-prime)
+* [Sqrt](#usage-brain-game-sqrt)
+* [Multiply](#usage-brain-game-multiply)
 
 ## Usage Brain Game Even
 ### Answer "yes" if number even otherwise answer "no".
