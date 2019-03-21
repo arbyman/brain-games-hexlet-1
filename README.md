@@ -10,12 +10,12 @@ This project includes games:
 * [Progression][4]
 * [Prime][5]
 ## Install Brain Game Even
-![](svg/brain-even.svg)
+<img src=svg/brain-even.svg height=300>
 ## Install Brain Game Calc
-![](svg/brain-calc.svg)
+<img src=svg/brain-calc.svg height=300>
 ## Install Brain Game Gcd
-![](svg/brain-gcd.svg)
+<img src=svg/brain-gcd.svg height=300>
 ## Install Brain Game Progression
-![](svg/brain-progression.svg)
+<img src=svg/brain-progression.svg height=300>
 ## Install Brain Game Prime
-![](svg/brain-prime.svg)
+<img src=svg/brain-prime.svg height=300>
