@@ -2,7 +2,7 @@ install:
 	npm install
 
 start:
-	npx babel-node src/bin/brain-prime.js
+	npx babel-node src/bin/brain-multiply.js
 
 publish:
 	npm publish
