@@ -10,8 +10,8 @@ const createNumberSqrList = (length) => {
 const length = 15;
 const description = 'What is the square root?';
 
-export default () => {
-  const generateDataGameSqrt = () => {
+export default (userName) => {
+  const generateSqrtGameData = () => {
     const numberForQuestion = getRandomNumber(0, length - 1);
     const numberSqrList = createNumberSqrList(length);
     const question = numberSqrList[numberForQuestion];
@@ -19,5 +19,5 @@ export default () => {
     return [question, correctAnswer];
   };
 
-  engine(generateDataGameSqrt, description);
+  engine(generateSqrtGameData, description, userName);
 };

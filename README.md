@@ -18,6 +18,10 @@
 * [Sqrt](#usage-brain-game-sqrt)
 * [Multiply](#usage-brain-game-multiply)
 
+### Usage Brain Games
+```$ brain-games```
+[![asciicast](https://asciinema.org/a/lKusltPYeRyHUgIDJZeMIbDsX.svg)](https://asciinema.org/a/lKusltPYeRyHUgIDJZeMIbDsX)
+
 ## Usage Brain Game Even
 ### Answer "yes" if number even otherwise answer "no".
 ```

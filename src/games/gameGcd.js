@@ -1,15 +1,15 @@
 import engine from '../engine';
 import getRandomNumber from '../utils';
 
-const gcd = (m, n) => (n === 0 ? m : gcd(n, m % n));
-export default () => {
-  const description = 'Find the greatest common divisor of given numbers.';
-  const generateDataGameGcd = () => {
+const getGcd = (m, n) => (n === 0 ? m : getGcd(n, m % n));
+const description = 'Find the greatest common divisor of given numbers.';
+export default (userName) => {
+  const generateGcdGameData = () => {
     const a = getRandomNumber(1, 100);
     const b = getRandomNumber(1, 100);
     const question = `${a} ${b}`;
-    const correctAnswer = `${gcd(Number(a), Number(b))}`;
+    const correctAnswer = `${getGcd(a, b)}`;
     return [question, correctAnswer];
   };
-  engine(generateDataGameGcd, description);
+  engine(generateGcdGameData, description, userName);
 };

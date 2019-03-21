@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import brainGameInfo from '..';
+import brainGameMenu from '..';
 
-brainGameInfo();
+brainGameMenu();

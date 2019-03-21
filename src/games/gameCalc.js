@@ -1,29 +1,29 @@
 import engine from '../engine';
 import getRandomNumber from '../utils';
 
-export default () => {
-  const description = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
+export default (userName) => {
   const operations = ['+', '-', '*'];
 
-  const getOperator = () => operations[getRandomNumber(0, 2)];
+  const getOperator = () => operations[getRandomNumber(0, operations.length - 1)];
   const getOperation = (oper) => {
     switch (oper) {
       case '-':
-        return (m, n) => `${Number(m) - Number(n)}`;
+        return (m, n) => `${m - n}`;
       case '*':
-        return (m, n) => `${Number(m) * Number(n)}`;
+        return (m, n) => `${m * n}`;
       default:
-        return (m, n) => `${Number(m) + Number(n)}`;
+        return (m, n) => `${m + n}`;
     }
   };
-  const generateDataGameCalc = () => {
+  const generateCalcGameData = () => {
     const a = getRandomNumber(1, 100);
     const b = getRandomNumber(1, 100);
-    const oper = getOperator();
-    const operation = getOperation(oper);
-    const question = `${a} ${oper} ${b}`;
+    const operator = getOperator();
+    const operation = getOperation(operator);
+    const question = `${a} ${operator} ${b}`;
     const correctAnswer = operation(a, b);
     return [question, correctAnswer];
   };
-  engine(generateDataGameCalc, description);
+  engine(generateCalcGameData, description, userName);
 };

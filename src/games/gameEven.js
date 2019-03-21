@@ -1,16 +1,14 @@
 import engine from '../engine';
 import getRandomNumber from '../utils';
 
-export default () => {
-  const checkParity = n => n % 2 === 0;
-  const getCorrectAnswer = n => (checkParity(n) ? 'yes' : 'no');
-  const description = 'Answer "yes" if number even otherwise answer "no".';
-
-  const generateDataGameEven = () => {
-    const num = getRandomNumber(1, 100);
-    const correct = getCorrectAnswer(num);
-    return [num, correct];
+const isParity = n => n % 2 === 0;
+const description = 'Answer "yes" if number even otherwise answer "no".';
+export default (userName) => {
+  const generateEvenGameData = () => {
+    const question = getRandomNumber(1, 100);
+    const correctAnswer = isParity(question) ? 'yes' : 'no';
+    return [question, correctAnswer];
   };
 
-  engine(generateDataGameEven, description);
+  engine(generateEvenGameData, description, userName);
 };
