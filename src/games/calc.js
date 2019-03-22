@@ -2,7 +2,7 @@ import engine from '../engine';
 import getRandomNumber from '../utils';
 
 const description = 'What is the result of the expression?';
-export default (userName) => {
+export default () => {
   const operations = ['+', '-', '*'];
 
   const getOperator = () => operations[getRandomNumber(0, operations.length - 1)];
@@ -25,5 +25,5 @@ export default (userName) => {
     const correctAnswer = operation(a, b);
     return [question, correctAnswer];
   };
-  engine(generateCalcGameData, description, userName);
+  engine(generateCalcGameData, description);
 };

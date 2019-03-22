@@ -3,7 +3,7 @@ import getRandomNumber from '../utils';
 
 const description = 'Do you remember the multiplication table?';
 
-export default (userName) => {
+export default () => {
   const generateMultiplyGameData = () => {
     const a = getRandomNumber(2, 9);
     const b = getRandomNumber(2, 9);
@@ -12,5 +12,5 @@ export default (userName) => {
     return [question, correctAnswer];
   };
 
-  engine(generateMultiplyGameData, description, userName);
+  engine(generateMultiplyGameData, description);
 };

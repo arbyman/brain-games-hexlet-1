@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import brainGameSqrt from '../games/gameSqrt';
+import brainGameSqrt from '../games/sqrt';
 
 brainGameSqrt();

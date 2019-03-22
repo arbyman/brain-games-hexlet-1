@@ -1,9 +1,11 @@
 import readlineSync from 'readline-sync';
 
 const steps = 3;
-const gameEngine = (generateGameData, description, userName = 'Friend') => {
+const gameEngine = (generateGameData, description) => {
+  console.log('Welcome to the Brain Games!\n');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!\n`);
   console.log(`${description}\n`);
-  console.log(`Let's play, ${userName}!\n`);
   for (let i = 1; i <= steps; i += 1) {
     const [question, correctAnswer] = generateGameData();
     console.log(`Question: ${question}`);
@@ -14,7 +16,7 @@ const gameEngine = (generateGameData, description, userName = 'Friend') => {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}').\n`);
       const userAnswerReplayGame = readlineSync.question(`Play again, ${userName}? (yes/no) `);
       if (userAnswerReplayGame === 'yes') {
-        gameEngine(generateGameData, description, userName);
+        gameEngine(generateGameData, description);
       }
       return;
     }
