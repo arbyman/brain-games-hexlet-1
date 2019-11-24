@@ -1,5 +1,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/8cf454a9ea717f917b16/maintainability)](https://codeclimate.com/github/arbyman/project-lvl1-s462/maintainability)
-[![Build Status](https://travis-ci.com/arbyman/project-lvl1-s462.svg?branch=master)](https://travis-ci.com/arbyman/project-lvl1-s462)
+[![Build Status](https://travis-ci.com/arbyman/brain-games-hexlet-1.svg?branch=master)](https://travis-ci.com/arbyman/brain-games-hexlet-1)
 
 # Welcome to the Brain Games!
 ## How install Brain Games?
@@ -20,15 +20,12 @@
 
 ```$ brain-games```
 
-[![asciicast](https://asciinema.org/a/lKusltPYeRyHUgIDJZeMIbDsX.svg)](https://asciinema.org/a/lKusltPYeRyHUgIDJZeMIbDsX)
-
 ## Usage Brain Game Even
 ### Answer "yes" if number even otherwise answer "no".
 ```
 $ npm install -g brain_games_arbyman
 $ brain-even
 ```
-[![asciicast](https://asciinema.org/a/ry3aayHpJ06oELDNCD22VIMYR.svg)](https://asciinema.org/a/ry3aayHpJ06oELDNCD22VIMYR)
 
 ## Usage Brain Game Calc
 ### What is the result of the expression?
@@ -36,7 +33,6 @@ $ brain-even
 $ npm install -g brain_games_arbyman
 $ brain-calc
 ```
-[![asciicast](https://asciinema.org/a/pvucxz3K1PfNwd9Ode2F17kwl.svg)](https://asciinema.org/a/pvucxz3K1PfNwd9Ode2F17kwl)
 
 ## Usage Brain Game Gcd
 ### Find the greatest common divisor of given numbers.
@@ -44,7 +40,6 @@ $ brain-calc
 $ npm install -g brain_games_arbyman
 $ brain-gcd
 ```
-[![asciicast](https://asciinema.org/a/NnJnxL3t7H81o0KpA0ZgmY2xo.svg)](https://asciinema.org/a/NnJnxL3t7H81o0KpA0ZgmY2xo)
 
 ## Usage Brain Game Progression
 ### What number is missing in the progression?
@@ -52,7 +47,6 @@ $ brain-gcd
 $ npm install -g brain_games_arbyman
 $ brain-progression
 ```
-[![asciicast](https://asciinema.org/a/wdMeKKwWpbf2s8gwWjDLw5zFz.svg)](https://asciinema.org/a/wdMeKKwWpbf2s8gwWjDLw5zFz)
 
 ## Usage Brain Game Prime
 ### Answer "yes" if given number is prime. Otherwise answer "no".
@@ -60,7 +54,6 @@ $ brain-progression
 $ npm install -g brain_games_arbyman
 $ brain-prime
 ```
-[![asciicast](https://asciinema.org/a/UNMhUohthDyjoJaet5PefommK.svg)](https://asciinema.org/a/UNMhUohthDyjoJaet5PefommK)
 
 ## Usage Brain Game Sqrt
 ### What is the square root?
@@ -68,7 +61,6 @@ $ brain-prime
 $ npm install -g brain_games_arbyman
 $ brain-sqrt
 ```
-[![asciicast](https://asciinema.org/a/fTEZyzAuD4fZ41xSwZLd0HCIY.svg)](https://asciinema.org/a/fTEZyzAuD4fZ41xSwZLd0HCIY)
 
 ## Usage Brain Game Multiply
 ### Do you remember the multiplication table?
@@ -76,6 +68,5 @@ $ brain-sqrt
 $ npm install -g brain_games_arbyman
 $ brain-multiply
 ```
-[![asciicast](https://asciinema.org/a/LiHsGmKJLpeSnlRgW8AsGoIW7.svg)](https://asciinema.org/a/LiHsGmKJLpeSnlRgW8AsGoIW7)
 
 ## Thanks You!
